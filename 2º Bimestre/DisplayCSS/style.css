@@ -1,0 +1,79 @@
+div{
+    width: 100%;
+}
+
+.header{
+    display: block;
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.item1{
+    border: 1px blue solid;
+    color: blue;
+    display: inline;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.button1{
+    background-color: green;
+    padding: 10px;
+    color:white;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.button2{
+    background-color: green;
+    padding: 10px;
+    color:white;
+    border: none;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.container{
+    display:flex;
+    background-color: red;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.flex1{
+
+    flex: 1;
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    margin: 0 10px;
+}
+
+.flex2{
+    flex: 2;
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    margin: 0 10px;
+}
+
+.grid-container {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
