@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    border: 5px solid transparent;
+    border-color: #404040;
+    background: linear-gradient(to bottom, dodgerblue, lightblue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -3;
+}
+
+img {
+    width: 20%;
+    margin-right: 50px;
+    opacity: 0.5;
+    transition: opacity 0.5s linear;
+    z-index: -2;
+    pointer-events: none;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.flex-box:hover img {
+    opacity: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    height: 75px;
+    line-height: 75px;
+    background: #404040;
+}
+
+.menu-titulo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    z-index: 2;
+}
+
+.menu-lista {
+    display: flex;
+}
+
+.menu-lista .menu-item {
+    cursor: pointer;
+    height: 100%;
+    padding: 0 30px;
+    transition: .4s;
+}
+
+.menu-lista .menu-item:hover {
+    background: dodgerblue;
+}
+
+.menu-lista .menu-link {
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 935px) {
+
+    nav {
+        padding: 0 2rem;
+    }
+
+    nav .menu-lista .menu-item {
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 675px) {
+
+    nav .menu-lista {
+        display: grid;
+        position: absolute;
+        background: #404040;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .6s;
+    }
+
+    nav .menu-lista .menu-item {
+        padding-left: 35px;
+    }
+
+    nav .menu-troca {
+        display: grid !important;
+    }
+
+}
+
+.menu-troca {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+.menu-troca .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 10%;
+    transition: .2s;
+}
+
+input {
+    display: none;
+}
+
+input:checked~nav .menu-lista {
+    transform: translateY(0);
+    z-index: 1;
+}
+
+input:checked~nav .menu-troca {
+    margin-top: 35px;
+}
+
+input:checked~nav .menu-troca .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked~nav .menu-troca .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked~nav .menu-troca .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
