@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #30659280;
+    color: #306592;
+}
+
+.nome{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+span {
+    margin: 10px;
+}
+
+.githubIcon{
+    color: black;
+}
+
+.cssIcon {
+    animation: moveIcon 4s infinite ease-in-out;
+    color: #264de4;
+}
+
+@keyframes moveIcon {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(300px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2vw;
+  background-color: #30659220;
+  padding: 10px;
+}
+
+.grid-items{
+    display: flex;
+    background-color: #fff;
+    border: 3px solid #306592;
+    border-radius: 20px;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-grid{
+    height: 15vh;
+    border-radius: 20px;
+}
+
+.img-grid:active{
+    transform: translate(35vw, 150px) scale(3);
+}
+
+footer{
+    display:flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(160deg, #306592 20%, #295603 80%);
+}
+
+.textFooter{
+    margin:10px;
+}
