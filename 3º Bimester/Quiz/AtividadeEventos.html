@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz de JavaScript</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #3498db;
+            text-align: center;
+        }
+
+        .question {
+            display: none;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option {
+            margin: 5px 0;
+        }
+
+        .submit-button {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tag {
+            display: none;
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .correct {
+            background-color: #2ecc71;
+            color: #ffffff;
+        }
+
+        .incorrect {
+            background-color: #e74c3c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de JavaScript</h1>
+
+        <div class="question" id="1">
+            <p>Pergunta 1: Qual é a linguagem de programação que estamos estudando?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q1" value="javascript"> JavaScript</label>
+                <label class="option"><input type="radio" name="q1" value="python"> Python</label>
+                <label class="option"><input type="radio" name="q1" value="csharp"> C#</label>
+                <label class="option"><input type="radio" name="q1" value="nodejs"> Node.js</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question" id="2">
+            <p>Pergunta 2: Qual é o meu nome?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q2" value="santana"> Santana</label>
+                <label class="option"><input type="radio" name="q2" value="jorge"> Jorge</label>
+                <label class="option"><input type="radio" name="q2" value="gabriel"> Gabriel</label>
+                <label class="option"><input type="radio" name="q2" value="luiz"> Luiz</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question">
+            <p>Pergunta 3: Qual é a minha linguagem de programação favorita?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q3" value="javascript"> JavaScript</label>
+                <label class="option"><input type="radio" name="q3" value="python"> Python</label>
+                <label class="option"><input type="radio" name="q3" value="csharp"> C#</label>
+                <label class="option"><input type="radio" name="q3" value="java"> Java</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question">
+            <p>Pergunta 4: Em qual cidade eu moro?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q4" value="barueri"> Barueri</label>
+                <label class="option"><input type="radio" name="q4" value="osasco"> Osasco</label>
+                <label class="option"><input type="radio" name="q4" value="jandira"> Jandira</label>
+                <label class="option"><input type="radio" name="q4" value="sp"> Sâo Paulo</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question">
+            <p>Pergunta 5: Qual seria a minha viagem dos sonhos?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q5" value="eua"> Estados Unidos</label>
+                <label class="option"><input type="radio" name="q5" value="espanha"> Espanha</label>
+                <label class="option"><input type="radio" name="q5" value="italia"> Itália</label>
+                <label class="option"><input type="radio" name="q5" value="japao"> Japão</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+    </div>
+
+    <script src="/AtividadeEventos.js">
+
+    </script>
+</body>
+</html>
